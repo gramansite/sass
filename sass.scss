@@ -1,6 +1,18 @@
 $a:blue;
 $c:50px;
 
+@mixin jay {
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 2px;
+    width: 100px;
+    text-align: center;
+}
+header h1:hover,header p:hover{
+    transform: translate(30%,0);
+    border-bottom: 10px solid red;
+}
+
 h1{
     color:$a;
     height: $c;
@@ -16,9 +28,13 @@ header{
     width: 100%;
     height: 200px;
     h1{
+        transition: all 0.5s ease;
+        @include jay;
         color:$a;
     }
     p{
+        transition: all 0.5s ease;
+        @include jay;
         $b:gray;
         color:$b;
     }
