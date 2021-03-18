@@ -1,7 +1,9 @@
+@import "contoh";
+
 $a:blue;
 $c:50px;
 
-@mixin jay {
+@mixin jay{
     background-color: aqua;
     border-radius: 5px;
     padding: 2px;
@@ -14,12 +16,15 @@ header h1:hover,header p:hover{
 }
 
 h1{
-    color:$a;
+    color:rgba($a,0.4);
     height: $c;
+}
+h2{
+    color:$warna;
 }
 
 header{
-    background-color: palevioletred;
+    background-color:darken(palevioletred,20%);
     border-radius: 5px;
     padding: 3px;
     font-size: 20px;
